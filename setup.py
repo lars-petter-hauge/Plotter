@@ -9,5 +9,5 @@ setup(
     description="Plotter application for plotting training data",
     packages=find_packages(),
     setup_requires=["setuptools_scm"],
-    install_requires=[],
+    install_requires=["pandas", "sqlalchemy"],
 )
