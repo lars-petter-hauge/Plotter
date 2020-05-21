@@ -17,7 +17,7 @@ from exercise_plotter.backend.database_manager import (
 # pylint: disable=redefined-outer-name
 
 # We create an in memory database for the tests
-engine = create_engine("sqlite:///test")  # pylint: disable=invalid-name
+engine = create_engine("sqlite://")  # pylint: disable=invalid-name
 Session.configure(bind=engine)
 
 DUMMY_META_ONE = {
